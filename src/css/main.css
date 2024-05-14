@@ -1,0 +1,49 @@
+
+/* APP & CHART WRAPPER */
+#app {
+	margin: 0 auto;
+	max-width: 275px;
+}
+#app .italic {
+	color: var(--grey03);
+	font-family: 'BentonSansCond-RegItalic', italic;
+	margin-bottom: 10px;
+	margin-top: -5px
+}
+.graphic-container {
+	/* display: flex; */
+	/* margin: 0 auto; */
+	/* justify-content: space-around; */
+}
+.graphic-container > div > iframe {
+	margin: 0 auto;
+}
+.graphic-container .flourish-chart,
+.graphic-container > iframe {
+	flex: 1;
+	max-width: 50%;
+}
+
+.graphic-container.full-width .flourish-chart,
+.graphic-container.full-width > iframe {
+	flex: 1;
+	max-width: 100%;
+}
+.graphic-container .flourish-chart:nth-of-type(1) {
+	margin-right: 0.5rem;
+}
+
+
+
+
+/* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 475px) {
+	#app {
+		margin: 0 auto;
+		max-width: 600px;
+	}
+    .graphic-container {
+    	display: flex;
+    	justify-content: space-between;
+    }
+}

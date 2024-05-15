@@ -4,16 +4,26 @@
 	margin: 0 auto;
 	max-width: 275px;
 }
+#app header {
+	margin-bottom: 25px;
+}
 #app .italic {
 	color: var(--grey03);
 	font-family: 'BentonSansCond-RegItalic', italic;
 	margin-bottom: 10px;
 	margin-top: -5px
 }
-.graphic-container {
-	/* display: flex; */
-	/* margin: 0 auto; */
-	/* justify-content: space-around; */
+.graphic-container .team-id {
+	display: flex;
+	justify-content: center;
+}
+.graphic-container .logo {
+	/* float: left; */
+	/* margin-left: 10px; */
+	width: 60px;
+}
+#app .graphic-container h3 {
+	/* float: left; */
 }
 .graphic-container > div > iframe {
 	margin: 0 auto;
